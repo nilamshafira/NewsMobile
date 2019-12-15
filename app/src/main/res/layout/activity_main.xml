@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgb"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textColor="#Fff"
+        android:textStyle="bold"
+        android:text="welcome to the news mobile !!!"
+        android:textSize="30sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/halo"
+        android:layout_width="282dp"
+        android:layout_height="121dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="120dp"
+        app:srcCompat="@drawable/news" />
+
+
+    <Button
+        android:id="@+id/profil"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="250dp"
+        android:textColor="#000080"
+        android:backgroundTint="#ffff"
+        android:onClick="profil"
+        android:text="profil" />
+
+
+    <Button
+        android:id="@+id/jual"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:textColor="#000080"
+        android:backgroundTint="#ffff"
+        android:layout_marginTop="290dp"
+        android:text="Order Newspaper"
+        android:onClick="jual" />
+
+    <Button
+        android:id="@+id/baca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#000080"
+        android:backgroundTint="#ffff"
+        android:layout_marginTop="330dp"
+        android:text="Hot News of Innovation Technology"
+        android:onClick="berita" />
+    <Button
+        android:id="@+id/feedback"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#F1B605"
+        android:backgroundTint="#F0E68C"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="16dp"
+        android:layout_above="@id/textView"
+        android:text="FEEDBACK NEWS MOBILE"
+        android:onClick="feed"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="10dp"
+        android:text="Application by Siti Rofiqotul Lutfiyah 2019 | 09031181722012"
+        android:textColor="#FDFDFD"
+        android:textSize="10sp"
+        android:textStyle="italic" />
+</RelativeLayout>
